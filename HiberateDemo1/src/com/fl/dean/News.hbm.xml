@@ -13,7 +13,7 @@
         <hibernate-mapping package="com.fl.dean">
         	<class name="News"  table="news">
         		<id name="newsId" column="news_id">
-        			<generator class="native"></generator>
+        			<generator class="assigned"></generator>
         		</id>
         		<property name="title" column="title"/>
         		<property name="content" column="content"/>

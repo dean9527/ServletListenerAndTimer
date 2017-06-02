@@ -28,4 +28,16 @@ public class News {
 	public void setContent(String content) {
 		this.content = content;
 	}
+
+	public News() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public News(Integer newsId, String title, String content) {
+		super();
+		this.newsId = newsId;
+		this.title = title;
+		this.content = content;
+	}
 }
