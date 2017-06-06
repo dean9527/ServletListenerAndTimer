@@ -19,13 +19,14 @@
             <h1>
             <#if (age > 60)>
             	老年人
-            <#elseif (age>40)>
+            <#elseif (age > 40)>
             	中年人
-            <#elseif (age>20)>
+            <#elseif (age > 20)>
             	青年人
             <#else>
             	少年人
             </#if>
             </h1>
+            <#include "1.ftl">
         </body>  
     </html>  
