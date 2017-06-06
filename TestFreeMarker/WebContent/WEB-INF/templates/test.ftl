@@ -8,9 +8,19 @@
             <h1>${message}</h1> 
            
             <#--使用list指令-->
+            <#--指令中list 列表  as 条目--> 
+            <#--条目_index表示当前条目在列表中索引-->
+            <#--条目_has_next表示列表中有无下一个值-->
             <h1>
-            	<#list ["星期一","星期二","星期三"] as day>
-            		${day}<br> 
+            	<#list ["星期一","星期二","星期三"] as day> 
+            		${day_index}:
+            		${day},
+            		<#if day_has_next>
+            			"还有下一个"
+            		<#else>
+            			"没有下一个"
+            		</#if>
+            		<br>
             	</#list>
             </h1>
             
